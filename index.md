@@ -5,6 +5,7 @@
 1. [Quick Reference](#quick-reference)
 	1. [General Commands](#general-commands)
 	1. [Reading Files \(with Less\)](#reading-files-with-less)
+	1. [Editing Files \(with vim\)](#editing-files-with-vim)
 	1. [Getting Help with Git](#getting-help-with-git)
 	1. [Starting a Repository](#starting-a-repository)
 	1. [Adding Files and Committing Changes](#adding-files-and-committing-changes)
@@ -14,7 +15,6 @@
 	1. [See Previous Commits](#see-previous-commits)
 	1. [Changing History](#changing-history)
 	1. [Remotes, clouds and GitHub](#remotes-clouds-and-github)
-1. [Role Playing Git](#role-playing-git)
 1. [Vocabulary](#vocabulary)
 1. [General commands \(for UNIX\)](#general-commands-for-unix)
 1. [Git commands](#git-commands)
@@ -64,6 +64,15 @@ Command                | Description
 `n`                    | scroll to next hit
 `N`                    | scroll to previous hit
 
+### Editing Files (with vim)
+
+Command      | Description
+---          | ---
+`vim [file]` | edit [file] with vim program
+`i`          | Enter "insert" mode.  Now you can type
+`esc`        | Escape current mode into "normal mode" where letters are commadns
+`:w`         | Save file
+`:q`         | Quit
 
 ### Getting Help with Git
 
@@ -147,72 +156,32 @@ Command                       | Description
 
 
 
-
-## Role Playing Git
-
-**Dwarf**
-  Mines away, on their own, stashes all their treasure, doesn't use it, but is happy with all that they have achieved.
-
-  Simply log away your history.  You never have any crisis, but you feel good and safe with your history.
-
-  * git plugin or desktop app.
-  * A few command line commands just for practice: 
-
-> git init, git add, git commit -a -m 'text'
-
-**Human**
-
-  Like a dwarf, but a bit more egotistical.
-
-  You like to show off a little more, so you put your treasure up on github for everyone to see.  
-
-  You're also a little selfish, like dwarves, so you aren't collaborating.
-
-  * git plugin or desktop app.
-  * Use GitHub
-
-
-**Elf**
-
-  More in touch with mystical powers and can talk to the animals (??!!??).
-
-  Cloning other repos, collaborating, and sharing your work with others.
-
-  * git plugin or desktop app
-  * May have started using the command line for some of the magical features
-  * Uses GitHub a lot as part of the workflow
-
-**Wizard**
-
-  Contributor to open source research software with git+gitHub
-
-  * Uses command line exclusive.
-  * For some reason, is completely hopeless at using the easier to use apps
-  * Uses GitHub a lot
-  * Bends time and space with git
-
-
 ## Vocabulary
 
 **Repository**
-A log book for a captain
-A Diary for all of your work
-A project containing all the files
+A folder where git is keeping track of all the changes you make to all the files in it.
+All the changes are recorded as commits, which git keeps as a log or diary of changes.
+Additionally, there may be parallel versions or copies too, known as branches. 
 
-*The records and information that git keeps to track your changes and versions*
+*All this, the records and information that git keeps to track your changes and versions, as well as the actual contents of the folder, is a repository*
 
 **Commit**
-How you put something in your diary - a single diary entry
-*Tell git to log and record the changes made since the last entry*
+How you put something in your diary or history - a single diary entry.
+All changes since the last commit are recorded, or "committed", and become a specific version or "commit".
+
+As a noun, it refers to a set of changes recorded as a particular version of your repository.
+As a verb, it refers to the act of recording these changes
+
 
 **Master**
-	The name for the default “universe”
+	The name for the default branch, or set of versions, or timeline of changes.
+	Mostly relevant only when you have multiple timelines or universes.
 
 **Hunk**
-	A location in your code where Git has detected changes
+	A particular region or location in your file where Git has detected changes.
 
 **Branch**
-	Parallel Universe
+	A Parallel Universe of versions and history.
 
 **Master Branch**
 	Original version
