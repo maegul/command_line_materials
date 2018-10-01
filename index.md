@@ -2,6 +2,18 @@
 # Git Cheat Sheet
 <!-- MarkdownTOC -->
 
+1. [Quick Reference](#quick-reference)
+	1. [General Commands](#general-commands)
+	1. [Reading Files \(with Less\)](#reading-files-with-less)
+	1. [Getting Help with Git](#getting-help-with-git)
+	1. [Starting a Repository](#starting-a-repository)
+	1. [Adding Files and Committing Changes](#adding-files-and-committing-changes)
+	1. [Branches](#branches)
+	1. [Showing Recent Work](#showing-recent-work)
+	1. [Logging and History](#logging-and-history)
+	1. [See Previous Commits](#see-previous-commits)
+	1. [Changing History](#changing-history)
+	1. [Remotes, clouds and GitHub](#remotes-clouds-and-github)
 1. [Role Playing Git](#role-playing-git)
 1. [Vocabulary](#vocabulary)
 1. [General commands \(for UNIX\)](#general-commands-for-unix)
@@ -10,16 +22,128 @@
 	1. [Using the Reader \(called less\)](#using-the-reader-called-less)
 	1. [Setting up your local git program](#setting-up-your-local-git-program)
 	1. [Starting a Git Repository](#starting-a-git-repository)
-	1. [Adding files and Committing Changes](#adding-files-and-committing-changes)
+	1. [Adding files and Committing Changes](#adding-files-and-committing-changes-1)
 	1. [Seeing your History](#seeing-your-history)
 	1. [Advanced History Searching](#advanced-history-searching)
 	1. [Using your History](#using-your-history)
 		1. [Moving through Time](#moving-through-time)
-		1. [Changing History](#changing-history)
+		1. [Changing History](#changing-history-1)
 	1. [Making and Using Branches](#making-and-using-branches)
 	1. [Syncing with GitHub](#syncing-with-github)
 
 <!-- /MarkdownTOC -->
+
+## Quick Reference
+
+### General Commands
+
+Command                | Description
+---                    | ---
+`man [command]`        | **Manual:**	Read manual or help file for [command]
+`ls`                   | **List** files and folders in current folder/directory
+`cd [directory]`       | **Change** your current **Directory** to [directory]
+`pwd`                  | **Print** the directory that you are currently in (**Working Directory**)
+`mkdir [name]`         | **Make** a new folder or **Directory** with name [name]
+`cp [file] [copy]`     | **C**o**p**y [file] to [copy]
+`mv [file] [new_name]` | **M**o**v**e [file] to [new_name]
+`rm [file]`            | **R**e**m**ove [file]. PERMANENT!
+
+### Reading Files (with Less)
+
+Command                | Description
+---                    | ---
+`less [file]`          | read [file]
+`h`                    | read help file (once opened Less)
+`j`                    | 1 line down
+`k`                    | 1 line up
+`d`                    | 1/2 window down
+`u`                    | 1/2 window up
+`G`                    | bottom of file
+`g`                    | top of file
+`/[text]`              | search for text in file (hit enter to search)
+`n`                    | scroll to next hit
+`N`                    | scroll to previous hit
+
+
+### Getting Help with Git
+
+Command                       | Description
+---                           | ---
+`git help [command]`          | Read help on the git sub-command [command]
+`git help -a`                 | List all available sub-commands
+`git help -g`                 | List all available guides / tutorials
+`git help glossary`           | Read the built in glossary
+
+
+### Starting a Repository
+
+Command                       | Description
+---                           | ---
+`git init`                    | Start git repository in current folder
+`git status`                  | Check current status of current repository
+
+### Adding Files and Committing Changes
+
+Command                       | Description
+---                           | ---
+`git add [file]`              | start tracking the file [file]
+`git add [file]`              | add changes to [file] to staging area
+`git commit -a -m "mess"`     | commit all changes with message "mess"
+`git commit -m "mess"`        | commit all staged changes with message "mess"
+
+### Branches
+
+Command                       | Description
+---                           | ---
+`git branch`                  | List all branches and current branch
+`git branch [name]`           | Make new branch with name [name]
+`git checkout [name]`         | Move to branch [name]
+`git merge [name]`            | Merge branch [name] into current branch
+
+
+### Showing Recent Work
+
+Command                       | Description
+---                           | ---
+`git diff`                    | Shows changes made since last commit
+`git diff [file]`             | Shows changes for specific file only
+`git diff [SHA] [SHA]`        | Shows differences between any two commits (identified by [SHA])
+
+### Logging and History
+
+Command                       | Description
+---                           | ---
+`git log`                     | Shows a log of your commit history
+`git log --oneline`           | Shows abbreviated history
+`git log --stat`              | shows changed files and number of changes
+
+
+### See Previous Commits
+
+Command                       | Description
+---                           | ---
+`git checkout [SHA]`          | Change current version to that of commit [SHA]
+`git checkout [name]`         | Return to most recent commit of branch [name]
+
+
+### Changing History
+
+Command                       | Description
+---                           | ---
+`git checkout HEAD -- [file]` | Discard changes to file and return to most recent commit
+`git reset HEAD [file]`       | Unstage changes but keep them in the files
+`git revert [SHA]`            | Undo commit [SHA] with new cancelling commit
+`git reset [SHA]`             | Reset repository to commit [SHA] (--hard, --mixed, --soft)
+
+### Remotes, clouds and GitHub
+
+Command                       | Description
+---                           | ---
+`git remote -v`               | List all remotes
+`git remote add [name] [URL]` | Add remote at [URL] under name [name]
+`git push [name] [branch]`    | Push branch [branch] to remote [name]
+`git pull [name] [branch]`    | Pull branch [branch] from remote [name]
+`git push -u [name] [branch]` | Push and set remote as upstream for branch (automatically used)
 
 
 
