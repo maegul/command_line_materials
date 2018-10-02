@@ -2,6 +2,7 @@
 # Git Command Line Materials
 <!-- MarkdownTOC -->
 
+1. [Why Command Line?](#why-command-line)
 1. [Quick Reference](#quick-reference)
 	1. [General Commands](#general-commands)
 	1. [Reading Files \(with Less\)](#reading-files-with-less)
@@ -62,6 +63,14 @@
 
 <!-- /MarkdownTOC -->
 
+## Why Command Line?
+* Default way to use git 
+	* helpful for getting help and doing tricky things
+* Cloud computing, super computers, Docker will be best used with a command line
+* More reliable and consistent (older computers can be used for longer)
+* Powerful!
+
+
 ## Quick Reference
 
 ### General Commands
@@ -119,8 +128,8 @@ Command                       | Description
 
 Command                       | Description
 ---                           | ---
-`git init`                    | Start git repository in current folder
 `git status`                  | Check current status of current repository
+`git init`                    | Start git repository in current folder
 
 ### Adding Files and Committing Changes
 
