@@ -1,5 +1,5 @@
 
-# Git Cheat Sheet
+# Git Command Line Materials
 <!-- MarkdownTOC -->
 
 1. [Quick Reference](#quick-reference)
