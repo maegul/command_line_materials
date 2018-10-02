@@ -1,0 +1,2176 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>@font-face {
+  font-family: octicons-anchor;
+  src: url(https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/font/octicons.woff) format('woff');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 980px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+body .markdown-body {
+    padding: 45px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    word-wrap: break-word;
+}
+
+pre {
+    font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.markdown-body {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  color: #333;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background-color: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body input {
+  font: 13px / 1.4 Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.markdown-body a {
+  color: #4078c0;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before {
+  display: table;
+  content: "";
+}
+
+.markdown-body hr:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+  font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.markdown-body .select::-ms-expand {
+  opacity: 0;
+}
+
+.markdown-body .octicon {
+  font: normal normal normal 16px/1 octicons-anchor;
+  display: inline-block;
+  text-decoration: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.markdown-body .octicon-link:before {
+  content: '\f05c';
+}
+
+.markdown-body:before {
+  display: table;
+  content: "";
+}
+
+.markdown-body:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.markdown-body .anchor {
+  display: inline-block;
+  padding-right: 2px;
+  margin-left: -18px;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  color: #000;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h1 .anchor {
+  line-height: 1;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 .anchor {
+  line-height: 1;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h3 .anchor {
+  line-height: 1.2;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h4 .anchor {
+  line-height: 1.2;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h5 .anchor {
+  line-height: 1.1;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body h6 .anchor {
+  line-height: 1.1;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  box-sizing: content-box;
+  background-color: #fff;
+}
+
+.markdown-body code {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb;
+}
+
+.markdown-body .pl-c {
+  color: #969896;
+}
+
+.markdown-body .pl-c1,
+.markdown-body .pl-s .pl-v {
+  color: #0086b3;
+}
+
+.markdown-body .pl-e,
+.markdown-body .pl-en {
+  color: #795da3;
+}
+
+.markdown-body .pl-s .pl-s1,
+.markdown-body .pl-smi {
+  color: #333;
+}
+
+.markdown-body .pl-ent {
+  color: #63a35c;
+}
+
+.markdown-body .pl-k {
+  color: #a71d5d;
+}
+
+.markdown-body .pl-pds,
+.markdown-body .pl-s,
+.markdown-body .pl-s .pl-pse .pl-s1,
+.markdown-body .pl-sr,
+.markdown-body .pl-sr .pl-cce,
+.markdown-body .pl-sr .pl-sra,
+.markdown-body .pl-sr .pl-sre {
+  color: #183691;
+}
+
+.markdown-body .pl-v {
+  color: #ed6a43;
+}
+
+.markdown-body .pl-id {
+  color: #b52a1d;
+}
+
+.markdown-body .pl-ii {
+  background-color: #b52a1d;
+  color: #f8f8f8;
+}
+
+.markdown-body .pl-sr .pl-cce {
+  color: #63a35c;
+  font-weight: bold;
+}
+
+.markdown-body .pl-ml {
+  color: #693a17;
+}
+
+.markdown-body .pl-mh,
+.markdown-body .pl-mh .pl-en,
+.markdown-body .pl-ms {
+  color: #1d3e81;
+  font-weight: bold;
+}
+
+.markdown-body .pl-mq {
+  color: #008080;
+}
+
+.markdown-body .pl-mi {
+  color: #333;
+  font-style: italic;
+}
+
+.markdown-body .pl-mb {
+  color: #333;
+  font-weight: bold;
+}
+
+.markdown-body .pl-md {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.markdown-body .pl-mi1 {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.markdown-body .pl-mdr {
+  color: #795da3;
+  font-weight: bold;
+}
+
+.markdown-body .pl-mo {
+  color: #1d3e81;
+}
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb;
+}
+
+.markdown-body .plan-price-unit {
+  color: #767676;
+  font-weight: normal;
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 0.35em 0.25em -1.6em;
+  vertical-align: middle;
+}
+
+.markdown-body .plan-choice {
+  padding: 15px;
+  padding-left: 40px;
+  display: block;
+  border: 1px solid #e0e0e0;
+  position: relative;
+  font-weight: normal;
+  background-color: #fafafa;
+}
+
+.markdown-body .plan-choice.open {
+  background-color: #fff;
+}
+
+.markdown-body .plan-choice.open .plan-choice-seat-breakdown {
+  display: block;
+}
+
+.markdown-body .plan-choice-free {
+  border-radius: 3px 3px 0 0;
+}
+
+.markdown-body .plan-choice-paid {
+  border-radius: 0 0 3px 3px;
+  border-top: 0;
+  margin-bottom: 20px;
+}
+
+.markdown-body .plan-choice-radio {
+  position: absolute;
+  left: 15px;
+  top: 18px;
+}
+
+.markdown-body .plan-choice-exp {
+  color: #999;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.markdown-body .plan-choice-seat-breakdown {
+  margin-top: 10px;
+  display: none;
+}
+
+.markdown-body :checked+.radio-label {
+  z-index: 1;
+  position: relative;
+  border-color: #4078c0;
+}
+
+@media print {
+  body .markdown-body {
+    padding: 0;
+    border: none;
+  }
+}
+</style><title>index</title></head><body><article class="markdown-body"><h1>
+<a id="user-content-git-command-line-materials" class="anchor" href="#git-command-line-materials" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Git Command Line Materials</h1>
+
+<ol>
+<li><a href="#why-command-line">Why Command Line?</a></li>
+<li>
+<a href="#quick-reference">Quick Reference</a>
+<ol>
+<li><a href="#general-commands">General Commands</a></li>
+<li><a href="#reading-files-with-less">Reading Files (with Less)</a></li>
+<li><a href="#editing-files-with-vim">Editing Files (with vim)</a></li>
+<li><a href="#getting-help-with-git">Getting Help with Git</a></li>
+<li><a href="#starting-a-repository">Starting a Repository</a></li>
+<li><a href="#adding-files-and-committing-changes">Adding Files and Committing Changes</a></li>
+<li><a href="#branches">Branches</a></li>
+<li><a href="#showing-recent-work">Showing Recent Work</a></li>
+<li><a href="#logging-and-history">Logging and History</a></li>
+<li><a href="#see-previous-commits">See Previous Commits</a></li>
+<li><a href="#changing-history">Changing History</a></li>
+<li><a href="#remotes-clouds-and-github">Remotes, clouds and GitHub</a></li>
+</ol>
+</li>
+<li>
+<a href="#things-to-learn">Things to Learn</a>
+<ol>
+<li><a href="#getting-started">Getting Started</a></li>
+<li>
+<a href="#fundamentals-of-using-the-command-line">Fundamentals of Using the Command Line</a>
+<ol>
+<li><a href="#challenge-1-starting-out-on-the-command-line">Challenge 1 (Starting out on the Command Line)</a></li>
+</ol>
+</li>
+<li><a href="#getting-help-with-git-1">Getting Help with Git</a></li>
+<li><a href="#starting-up-git">Starting up Git</a></li>
+<li>
+<a href="#committing">Committing</a>
+<ol>
+<li><a href="#challenge-2-starting-up-git">Challenge 2 (Starting up Git)</a></li>
+</ol>
+</li>
+<li>
+<a href="#the-staging-area">The Staging Area</a>
+<ol>
+<li><a href="#challenge-3-committing">Challenge 3 (Committing)</a></li>
+</ol>
+</li>
+<li><a href="#seeing-your-history">Seeing your history</a></li>
+<li>
+<a href="#searching-your-history">Searching your history</a>
+<ol>
+<li><a href="#challenge-4-see-your-history">Challenge 4 (See your history)</a></li>
+</ol>
+</li>
+<li><a href="#aliases">Aliases</a></li>
+<li>
+<a href="#branches-1">Branches</a>
+<ol>
+<li><a href="#challenge-5-branches">Challenge 5 (Branches)</a></li>
+</ol>
+</li>
+<li>
+<a href="#time-travel">Time Travel</a>
+<ol>
+<li><a href="#challenge-6-moving-through-your-history">Challenge 6 (Moving through your history)</a></li>
+</ol>
+</li>
+<li>
+<a href="#github-and-remotes">GitHub and Remotes</a>
+<ol>
+<li><a href="#challenge-7-remotes">Challenge 7 (Remotes)</a></li>
+</ol>
+</li>
+</ol>
+</li>
+<li><a href="#vocabulary">Vocabulary</a></li>
+<li><a href="#general-commands-for-unix">General commands (for UNIX)</a></li>
+<li>
+<a href="#git-commands">Git commands</a>
+<ol>
+<li><a href="#help">Help</a></li>
+<li><a href="#using-the-reader-called-less">Using the Reader (called less)</a></li>
+<li><a href="#setting-up-your-git-program">Setting up your git program</a></li>
+<li><a href="#ignoring-files">Ignoring files</a></li>
+<li><a href="#starting-a-git-repository">Starting a Git Repository</a></li>
+<li><a href="#adding-files-and-committing-changes-1">Adding files and Committing Changes</a></li>
+<li><a href="#seeing-your-history-1">Seeing your History</a></li>
+<li><a href="#advanced-history-searching">Advanced History Searching</a></li>
+<li>
+<a href="#using-your-history">Using your History</a>
+<ol>
+<li><a href="#moving-through-time">Moving through Time</a></li>
+<li><a href="#changing-history-1">Changing History</a></li>
+</ol>
+</li>
+<li><a href="#making-and-using-branches">Making and Using Branches</a></li>
+<li><a href="#syncing-with-github">Syncing with GitHub</a></li>
+</ol>
+</li>
+<li>
+<a href="#sample-files">Sample Files</a>
+<ol>
+<li><a href="#first-sample-file">First Sample File</a></li>
+<li><a href="#second">Second</a></li>
+</ol>
+</li>
+<li>
+<a href="#further-resources">Further Resources</a>
+<ol>
+<li><a href="#additional-command-line-resources">Additional Command Line Resources</a></li>
+<li><a href="#recommended-documentation-and-materials">Recommended Documentation and Materials</a></li>
+<li><a href="#nice-tutorials">Nice Tutorials</a></li>
+<li><a href="#more-thorough-guides">More thorough guides</a></li>
+</ol>
+</li>
+</ol>
+
+<h2>
+<a id="user-content-why-command-line" class="anchor" href="#why-command-line" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Why Command Line?</h2>
+<ul>
+<li>Default way to use git
+<ul>
+<li>helpful for getting help and doing tricky things</li>
+</ul>
+</li>
+<li>Cloud computing, super computers, Docker will be best used with a command line</li>
+<li>More reliable and consistent (older computers can be used for longer)</li>
+<li>Powerful!</li>
+</ul>
+<h2>
+<a id="user-content-quick-reference" class="anchor" href="#quick-reference" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Quick Reference</h2>
+<h3>
+<a id="user-content-general-commands" class="anchor" href="#general-commands" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>General Commands</h3>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>man [command]</code></td>
+<td>
+<strong>Manual:</strong>	Read manual or help file for [command]</td>
+</tr>
+<tr>
+<td><code>ls</code></td>
+<td>
+<strong>List</strong> files and folders in current folder/directory</td>
+</tr>
+<tr>
+<td><code>cd [directory]</code></td>
+<td>
+<strong>Change</strong> your current <strong>Directory</strong> to [directory]</td>
+</tr>
+<tr>
+<td><code>pwd</code></td>
+<td>
+<strong>Print</strong> the directory that you are currently in (<strong>Working Directory</strong>)</td>
+</tr>
+<tr>
+<td><code>mkdir [name]</code></td>
+<td>
+<strong>Make</strong> a new folder or <strong>Directory</strong> with name [name]</td>
+</tr>
+<tr>
+<td><code>cp [file] [copy]</code></td>
+<td>
+<strong>C</strong>o<strong>p</strong>y [file] to [copy]</td>
+</tr>
+<tr>
+<td><code>mv [file] [new_name]</code></td>
+<td>
+<strong>M</strong>o<strong>v</strong>e [file] to [new_name]</td>
+</tr>
+<tr>
+<td><code>rm [file]</code></td>
+<td>
+<strong>R</strong>e<strong>m</strong>ove [file]. PERMANENT!</td>
+</tr>
+<tr>
+<td><code>.</code></td>
+<td>Short-cut for current folder</td>
+</tr>
+<tr>
+<td><code>..</code></td>
+<td>Short-cut for folder above current folder</td>
+</tr>
+</tbody>
+</table>
+<h3>
+<a id="user-content-reading-files-with-less" class="anchor" href="#reading-files-with-less" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Reading Files (with Less)</h3>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>less [file]</code></td>
+<td>read [file]</td>
+</tr>
+<tr>
+<td><code>h</code></td>
+<td>read help file (once opened Less)</td>
+</tr>
+<tr>
+<td><code>j</code></td>
+<td>1 line down</td>
+</tr>
+<tr>
+<td><code>k</code></td>
+<td>1 line up</td>
+</tr>
+<tr>
+<td><code>d</code></td>
+<td>1/2 window down</td>
+</tr>
+<tr>
+<td><code>u</code></td>
+<td>1/2 window up</td>
+</tr>
+<tr>
+<td><code>G</code></td>
+<td>bottom of file</td>
+</tr>
+<tr>
+<td><code>g</code></td>
+<td>top of file</td>
+</tr>
+<tr>
+<td><code>/[text]</code></td>
+<td>search for text in file (hit enter to search)</td>
+</tr>
+<tr>
+<td><code>n</code></td>
+<td>scroll to next hit</td>
+</tr>
+<tr>
+<td><code>N</code></td>
+<td>scroll to previous hit</td>
+</tr>
+</tbody>
+</table>
+<h3>
+<a id="user-content-editing-files-with-vim" class="anchor" href="#editing-files-with-vim" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Editing Files (with vim)</h3>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>vim [file]</code></td>
+<td>edit [file] with vim program</td>
+</tr>
+<tr>
+<td><code>i</code></td>
+<td>Enter "insert" mode.  Now you can type</td>
+</tr>
+<tr>
+<td><code>esc</code></td>
+<td>Escape current mode into "normal mode" where letters are commadns</td>
+</tr>
+<tr>
+<td><code>:w</code></td>
+<td>Save file</td>
+</tr>
+<tr>
+<td><code>:q</code></td>
+<td>Quit</td>
+</tr>
+</tbody>
+</table>
+<h3>
+<a id="user-content-getting-help-with-git" class="anchor" href="#getting-help-with-git" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Getting Help with Git</h3>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>git help [command]</code></td>
+<td>Read help on the git sub-command [command]</td>
+</tr>
+<tr>
+<td><code>git help -a</code></td>
+<td>List all available sub-commands</td>
+</tr>
+<tr>
+<td><code>git help -g</code></td>
+<td>List all available guides / tutorials</td>
+</tr>
+<tr>
+<td><code>git help glossary</code></td>
+<td>Read the built in glossary</td>
+</tr>
+</tbody>
+</table>
+<h3>
+<a id="user-content-starting-a-repository" class="anchor" href="#starting-a-repository" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Starting a Repository</h3>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>git status</code></td>
+<td>Check current status of current repository</td>
+</tr>
+<tr>
+<td><code>git init</code></td>
+<td>Start git repository in current folder</td>
+</tr>
+</tbody>
+</table>
+<h3>
+<a id="user-content-adding-files-and-committing-changes" class="anchor" href="#adding-files-and-committing-changes" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Adding Files and Committing Changes</h3>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>git add [file]</code></td>
+<td>start tracking the file [file]</td>
+</tr>
+<tr>
+<td><code>git add [file]</code></td>
+<td>add changes to [file] to staging area</td>
+</tr>
+<tr>
+<td><code>git commit -a -m "mess"</code></td>
+<td>commit all changes with message "mess"</td>
+</tr>
+<tr>
+<td><code>git commit -m "mess"</code></td>
+<td>commit all staged changes with message "mess"</td>
+</tr>
+</tbody>
+</table>
+<h3>
+<a id="user-content-branches" class="anchor" href="#branches" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Branches</h3>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>git branch</code></td>
+<td>List all branches and current branch</td>
+</tr>
+<tr>
+<td><code>git branch [name]</code></td>
+<td>Make new branch with name [name]</td>
+</tr>
+<tr>
+<td><code>git checkout [name]</code></td>
+<td>Move to branch [name]</td>
+</tr>
+<tr>
+<td><code>git merge [name]</code></td>
+<td>Merge branch [name] into current branch</td>
+</tr>
+</tbody>
+</table>
+<h3>
+<a id="user-content-showing-recent-work" class="anchor" href="#showing-recent-work" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Showing Recent Work</h3>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>git diff</code></td>
+<td>Shows changes made since last commit</td>
+</tr>
+<tr>
+<td><code>git diff [file]</code></td>
+<td>Shows changes for specific file only</td>
+</tr>
+<tr>
+<td><code>git diff [SHA] [SHA]</code></td>
+<td>Shows differences between any two commits (identified by [SHA])</td>
+</tr>
+</tbody>
+</table>
+<h3>
+<a id="user-content-logging-and-history" class="anchor" href="#logging-and-history" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Logging and History</h3>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>git log</code></td>
+<td>Shows a log of your commit history</td>
+</tr>
+<tr>
+<td><code>git log --oneline</code></td>
+<td>Shows abbreviated history</td>
+</tr>
+<tr>
+<td><code>git log --stat</code></td>
+<td>shows changed files and number of changes</td>
+</tr>
+<tr>
+<td><code>git log -n X</code></td>
+<td>Log only x most recent commits</td>
+</tr>
+<tr>
+<td><code>git log [file]</code></td>
+<td>Show only commits that changed [file]</td>
+</tr>
+<tr>
+<td><code>git log -L [st],[end]:[file]</code></td>
+<td>Show only commits that have affected [file] from lines [st] to [end]</td>
+</tr>
+<tr>
+<td><code>git log --author=[name]</code></td>
+<td>Show only commits done by [name]</td>
+</tr>
+<tr>
+<td><code>git log [--after,--before] [date]</code></td>
+<td>Log commits or history only before or after the [date] provided.</td>
+</tr>
+<tr>
+<td><code>git log [-S,-G] [pattern]</code></td>
+<td>Show commits that involved a change to [pattern]</td>
+</tr>
+<tr>
+<td><code>git log --grep [text]</code></td>
+<td>Show only commits that have [text] in the message</td>
+</tr>
+<tr>
+<td><code>git blame [file]</code></td>
+<td>Show last commit to affect each line of [file]</td>
+</tr>
+</tbody>
+</table>
+<h3>
+<a id="user-content-see-previous-commits" class="anchor" href="#see-previous-commits" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>See Previous Commits</h3>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>git checkout [SHA]</code></td>
+<td>Change current version to that of commit [SHA]</td>
+</tr>
+<tr>
+<td><code>git checkout [name]</code></td>
+<td>Return to most recent commit of branch [name]</td>
+</tr>
+</tbody>
+</table>
+<h3>
+<a id="user-content-changing-history" class="anchor" href="#changing-history" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Changing History</h3>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>git checkout HEAD -- [file]</code></td>
+<td>Discard changes to file and return to most recent commit</td>
+</tr>
+<tr>
+<td><code>git reset HEAD [file]</code></td>
+<td>Unstage changes but keep them in the files</td>
+</tr>
+<tr>
+<td><code>git revert [SHA]</code></td>
+<td>Undo commit [SHA] with new cancelling commit</td>
+</tr>
+<tr>
+<td><code>git reset [SHA]</code></td>
+<td>Reset repository to commit [SHA] (--hard, --mixed, --soft)</td>
+</tr>
+</tbody>
+</table>
+<h3>
+<a id="user-content-remotes-clouds-and-github" class="anchor" href="#remotes-clouds-and-github" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Remotes, clouds and GitHub</h3>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>git remote -v</code></td>
+<td>List all remotes</td>
+</tr>
+<tr>
+<td><code>git remote add [name] [URL]</code></td>
+<td>Add remote at [URL] under name [name]</td>
+</tr>
+<tr>
+<td><code>git push [name] [branch]</code></td>
+<td>Push branch [branch] to remote [name]</td>
+</tr>
+<tr>
+<td><code>git pull [name] [branch]</code></td>
+<td>Pull branch [branch] from remote [name]</td>
+</tr>
+<tr>
+<td><code>git push -u [name] [branch]</code></td>
+<td>Push and set remote as upstream for branch (automatically used)</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<hr>
+<h2>
+<a id="user-content-things-to-learn" class="anchor" href="#things-to-learn" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Things to Learn</h2>
+<h3>
+<a id="user-content-getting-started" class="anchor" href="#getting-started" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Getting Started</h3>
+<ul>
+<li>Command line app: <strong>Mac:</strong> <code>Terminal.app</code>; <strong>Windows:</strong> <code>GitBASH</code>.</li>
+<li>Command -&gt; action + output</li>
+<li>Structure of a command:</li>
+</ul>
+<p><code>command sub-command -o -option target/argument</code></p>
+<p><code>command sub-command [-o] [-option] [target/argument]</code></p>
+<h3>
+<a id="user-content-fundamentals-of-using-the-command-line" class="anchor" href="#fundamentals-of-using-the-command-line" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Fundamentals of Using the Command Line</h3>
+<ul>
+<li>
+<strong>Help!!:</strong> <code>man</code>
+</li>
+<li>
+<strong>Moving Around:</strong> <code>pwd</code>, <code>cd</code>, <code>ls</code>, (<code>mkdir</code>, <code>mv</code>, <code>cp</code>, <code>rm</code>)</li>
+<li>Editing text: <code>vim</code>
+<ul>
+<li>
+<code>i</code>, <code>esc</code>
+</li>
+<li>
+<code>:w</code>, <code>:q</code>
+</li>
+</ul>
+</li>
+</ul>
+<h4>
+<a id="user-content-challenge-1-starting-out-on-the-command-line" class="anchor" href="#challenge-1-starting-out-on-the-command-line" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Challenge 1 (Starting out on the Command Line)</h4>
+<ul>
+<li>Make a folder for this set of exercises where ever suits you.</li>
+<li>Open your command line.</li>
+<li>Find out which folder it starts in by default
+<ul>
+<li>Can you use either <em>pwd</em> or <em>ls</em> to do so?</li>
+</ul>
+</li>
+<li>Navigate to the folder you've set up for command line git.</li>
+</ul>
+<p><strong>Extension</strong></p>
+<ul>
+<li>Can you figure out what “.” and “..” represent in the command line?
+<ul>
+<li>Using <code>ls</code> or <code>cd</code> will help you.</li>
+</ul>
+</li>
+<li>after entering the command ‘vim’, can you get back to the command line?</li>
+<li>Can you tell me what the command <code>ln</code> does?</li>
+<li>Don’t like the appearance of your command line, especially the prompt?
+<ul>
+<li>You can customise the look of the prompt.</li>
+<li>In your home directory ($HOME), create a profile called .bash_profile</li>
+<li>In that file, add one of the following lines of code:
+<ul>
+<li><code>export PS1="\n(\!)-(\[\e[37m\]\t\[\e[0m\])-(\[\e[31m\]\u\[\e[0m\])-(\[\e[36m\]\w\[\e[0m\])\n&gt; "</code></li>
+<li><code>export PS1="\n(\t)-(\w)\n&gt; "</code></li>
+</ul>
+</li>
+<li>Start a new terminal window … like the change?</li>
+</ul>
+</li>
+<li>You can also probably edit the general appearance of your command prompt in Terminal or GitBash’s preferences</li>
+</ul>
+<hr>
+<hr>
+<h3>
+<a id="user-content-getting-help-with-git-1" class="anchor" href="#getting-help-with-git-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Getting Help with Git</h3>
+<ul>
+<li>Google + Stack Overflow</li>
+<li><code>git help [command]</code></li>
+<li>
+<code>less</code> and navigation</li>
+</ul>
+<h3>
+<a id="user-content-starting-up-git" class="anchor" href="#starting-up-git" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Starting up Git</h3>
+<ul>
+<li>folder - repo - <code>git init</code> - <code>git status</code>
+</li>
+<li>
+<code>add [file]</code> - edit - <code>git diff</code>
+</li>
+</ul>
+<h3>
+<a id="user-content-committing" class="anchor" href="#committing" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Committing</h3>
+<ul>
+<li><code>git commit -am "message"</code></li>
+<li><code>git log</code></li>
+</ul>
+<h4>
+<a id="user-content-challenge-2-starting-up-git" class="anchor" href="#challenge-2-starting-up-git" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Challenge 2 (Starting up Git)</h4>
+<ul>
+<li>Make sure you are in the folder of your repo for these exercises.</li>
+<li>Initialise your git repository.</li>
+<li>Create code files by copying from <a href="#sample-files">sample files</a> below.</li>
+<li>Add the files to git and commit with a commit message.</li>
+</ul>
+<p><strong>Extension</strong></p>
+<ul>
+<li>Make a change to the first sample file, and in your commit, omit the -m and message (do only <code>git commit -a</code>).
+<ul>
+<li>How does git respond?  Can you make it happy?</li>
+<li>
+<strong>This is intended to create a potentially unfriendly problem</strong> for you.  It's possible to make it go away, but not intuitive.</li>
+</ul>
+</li>
+<li>Get familiar with the git help command <code>git help</code>
+</li>
+<li>Figure out how to list all the git subcommands and concepts.</li>
+</ul>
+<hr>
+<hr>
+<h3>
+<a id="user-content-the-staging-area" class="anchor" href="#the-staging-area" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The Staging Area</h3>
+<ul>
+<li>Working Directory - Staging Area - Repo</li>
+<li>
+<code>git commit</code> v <code>git commit -a</code>
+</li>
+</ul>
+<h4>
+<a id="user-content-challenge-3-committing" class="anchor" href="#challenge-3-committing" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Challenge 3 (Committing)</h4>
+<ul>
+<li>Add the functions of your code file one by one.</li>
+<li>Commit each one separately, providing a semi-decent commit message.</li>
+<li>Use the staging area for some of the functions.</li>
+<li>Can you use <code>git diff</code> to preview your changes before committing?</li>
+<li>Try changing both of your files, but then only commit changes for one at a time (clue: use the staging area/index)</li>
+</ul>
+<p><strong>Extension</strong></p>
+<ul>
+<li>review your history with <code>git log</code>. Use git help to see what modifications you can make to the way the log is displayed.</li>
+<li>See if you can work out how to use <code>git add -p</code>.
+<ul>
+<li>Make some changes to a few lines of your file, just for the sake of this extension.  Before staging or committing, run <code>git add -p</code>.</li>
+</ul>
+</li>
+<li>Make some changes to both files, stage one of the files, and find the difference between <code>git diff</code> and <code>git diff --cached</code>
+</li>
+<li>What does <code>git commit --amend</code> do?</li>
+</ul>
+<hr>
+<hr>
+<h3>
+<a id="user-content-seeing-your-history" class="anchor" href="#seeing-your-history" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Seeing your history</h3>
+<ul>
+<li><code>git log [--oneline, --stat, [file]]</code></li>
+<li><code>git show [SHA]</code></li>
+<li><code>git blame [file]</code></li>
+<li><code>git diff [--stat] [SHA] [SHA] [file]</code></li>
+</ul>
+<h3>
+<a id="user-content-searching-your-history" class="anchor" href="#searching-your-history" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Searching your history</h3>
+<ul>
+<li><code>git log [-n, --after, --before, --author]</code></li>
+<li><code>git log [--grep, -G, -L]</code></li>
+</ul>
+<h4>
+<a id="user-content-challenge-4-see-your-history" class="anchor" href="#challenge-4-see-your-history" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Challenge 4 (See your history)</h4>
+<ul>
+<li>Given commands for logging, and what you know about your history
+<ul>
+<li>Experiment with the log command however you like, OR ...</li>
+<li>Use <code>-n</code> to show only the last two commits</li>
+<li>Use <code>--before</code> to isolate the first commit</li>
+<li>Use <code>--grep</code> to get only your first commit</li>
+<li>Use <code>-S</code> to get only the commits in which you changed the function "division"</li>
+<li>Use <code>-L</code> to specify the lines for a specific function in the code</li>
+</ul>
+</li>
+</ul>
+<hr>
+<hr>
+<h3>
+<a id="user-content-aliases" class="anchor" href="#aliases" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Aliases</h3>
+<ul>
+<li><code>git config --global alias.quick_commit "commit -a -m "whatever, get it done!"</code></li>
+<li><code>git config --global alias.qlg "log --oneline --stat"</code></li>
+</ul>
+<h3>
+<a id="user-content-branches-1" class="anchor" href="#branches-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Branches</h3>
+<ul>
+<li><code>git branch [-v]</code></li>
+<li><code>git branch [name]</code></li>
+<li><code>git checkout [name]</code></li>
+<li><code>git merge [other_branch]</code></li>
+</ul>
+<h4>
+<a id="user-content-challenge-5-branches" class="anchor" href="#challenge-5-branches" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Challenge 5 (Branches)</h4>
+<ul>
+<li>
+<p>While doing this challenge, try to check your status log and your file constantly to see the changes <code>checkout [branch name]</code> and <code>git merge</code> are making to your files.</p>
+</li>
+<li>
+<p>Make a new branch</p>
+<ul>
+<li>In the new branch, create a new function (with copy and paste if you like).</li>
+<li>Add and/or commit as usual.</li>
+<li>Merge the new branch back into the master branch.</li>
+</ul>
+</li>
+<li>
+<p>Make a new branch.</p>
+<ul>
+<li>Change a function in the master branch, and commit that change.</li>
+<li>Now change the same function in the new branch, but in a different way.</li>
+<li>Try merging the new branch into the master branch.</li>
+<li>Can you fix the problem?</li>
+</ul>
+</li>
+</ul>
+<hr>
+<hr>
+<h3>
+<a id="user-content-time-travel" class="anchor" href="#time-travel" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Time Travel</h3>
+<ul>
+<li>
+<code>git checkout [SHA]</code>
+<ul>
+<li><code>git branch [split branch]</code></li>
+</ul>
+</li>
+<li><code>git checkout [branchName]</code></li>
+<li><code>git revert [SHA]</code></li>
+<li><code>git reset [--soft, --mixed, --hard][SHA]</code></li>
+</ul>
+<h4>
+<a id="user-content-challenge-6-moving-through-your-history" class="anchor" href="#challenge-6-moving-through-your-history" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Challenge 6 (Moving through your history)</h4>
+<ul>
+<li>
+<p>Revert your last commit</p>
+</li>
+<li>
+<p>Revert that reversion</p>
+</li>
+<li>
+<p>Reset your repo to before you bothered with the reversions (careful with reset)</p>
+</li>
+<li>
+<p>Look at what your main code file looked like after your second commit. THen return to the present</p>
+</li>
+<li>
+<p>Delete a file and bring it back</p>
+</li>
+</ul>
+<p><strong>Extension</strong></p>
+<ul>
+<li>There are three modes of resetting: soft, mixed and hard.  Try to work out the differences between them by experimentation.</li>
+<li>When you have travelled back in time and checked out another commit, try to make some changes and commit them.
+<ul>
+<li>What happens?  What happens if you go back to the "present" with <code>git checkout master</code>?</li>
+</ul>
+</li>
+</ul>
+<hr>
+<hr>
+<h3>
+<a id="user-content-github-and-remotes" class="anchor" href="#github-and-remotes" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>GitHub and Remotes</h3>
+<ul>
+<li><code>git remote add [name] [URL]</code></li>
+<li><code>git push\pull [remote] [branch]</code></li>
+<li><code>git clone [URL]</code></li>
+</ul>
+<h4>
+<a id="user-content-challenge-7-remotes" class="anchor" href="#challenge-7-remotes" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Challenge 7 (Remotes)</h4>
+<ul>
+<li>Clone the repo for this document with the URL <code>https://github.com/maegul/command_line_materials.git</code>
+</li>
+<li>Check to see the files are on your computer</li>
+<li>Create an empty repo on your github account ...
+<ul>
+<li>copy the URL to it</li>
+<li>Add it as a remote to your new local repository</li>
+<li>push this document to your own github repo</li>
+</ul>
+</li>
+</ul>
+<hr>
+<hr>
+<h2>
+<a id="user-content-vocabulary" class="anchor" href="#vocabulary" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Vocabulary</h2>
+<p><strong>Less</strong></p>
+<p>Program for reading files in the command line.  A "Reader".</p>
+<p><strong>Vim</strong></p>
+<p>Program for editing text in the command line.  Popular text editor.</p>
+<p><strong>Repository</strong></p>
+<p>A folder where git is keeping track of all the changes you make to all the files in it.
+All the changes are recorded as commits, which git keeps as a log or diary of changes.
+Additionally, there may be parallel versions or copies too, known as branches.</p>
+<p><em>All this, the records and information that git keeps to track your changes and versions, as well as the actual contents of the folder, is a repository</em></p>
+<p><strong>Commit</strong></p>
+<p>How you put something in your diary or history - a single diary entry.
+All changes since the last commit are recorded, or "committed", and become a specific version or "commit".</p>
+<p>As a noun, it refers to a set of changes recorded as a particular version of your repository.
+As a verb, it refers to the act of recording these changes</p>
+<p><strong>Working Directory + Staging Area</strong></p>
+<p>The <em>Working Directory</em> is simply your files, as you've known them before git.<br>
+This is simply the files on your hard drive before git gets involved and whether you've committed them or not.<br>
+If you save some changes to your file, you've changed the working directory.</p>
+<p>The <em>Staging Area</em> is a temporary storage area for changes you've made since your last commit.<br>
+Before committing certain changes, you can store them in the staging area.
+This is useful for when you only want to commit a small amount of the changes you've made at a time, into separate commits.
+It's a way of sorting many changes into related groups, so that your history makes more sense.
+It is not necessary to use it.
+Many users of git often skip using it.</p>
+<p><strong>Log</strong></p>
+<p>A list of your commits, generally listed in chronological order.</p>
+<p><strong>Branch</strong>
+A history of commits that is parallel to other history of commits.
+Two branches will have</p>
+<p><strong>Master</strong></p>
+<p>The name for the default branch, or set of versions, or timeline of changes.
+Mostly relevant only when you have multiple timelines or universes.</p>
+<p><strong>Branch</strong></p>
+<p>A Parallel Universe of versions and history.
+Branches are split from a common commit, and can be put back together through <em>merging</em>.
+Otherwise, they are independent versions that do not affect each other and which can be accessed separately.</p>
+<p><strong>Merge</strong></p>
+<p>Put history of one branch into another so that the changes made in that branch have now been made in the current branch.
+This doesn't make the two branches identical.
+It is a one way operation.
+It simply applies the changes of one branch onto the current branch.</p>
+<p><strong>Hunk</strong></p>
+<p>A particular region or location in your file where Git has detected changes.</p>
+<p><strong>Remote</strong></p>
+<p>Another computer, typically a cloud service, that will store git repositories accessible over the internet or a network.
+As with merging branches, you merge your remote repositories with your local repositories (the ones on your computer).
+This is done, typically, with the <code>push</code> and <code>pull</code> commands.</p>
+<p><strong>Origin</strong></p>
+<p>As with "master", the default name of the remote for a repository.</p>
+<p><strong>HEAD</strong>
+Is a reference to the last commit in the currently checked-out branch.
+The "head" of your branch, in a way.</p>
+<h2>
+<a id="user-content-general-commands-for-unix" class="anchor" href="#general-commands-for-unix" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>General commands (for UNIX)</h2>
+<p><strong>Help or Manual</strong></p>
+<blockquote>
+<p>man [command]</p>
+</blockquote>
+<p>Open up the manual or help file for [command], using the "reader" app called <code>less</code>.</p>
+<p>Consider installing and using the app <a href="https://tldr.sh" rel="nofollow">tldr</a> for quick and practical help.</p>
+<p><strong>List</strong></p>
+<blockquote>
+<p>ls</p>
+</blockquote>
+<p>Lists the contents of the current directory.</p>
+<p>A number of useful options are:</p>
+<ul>
+<li>
+<code>la -a</code> - list all, including hidden files</li>
+<li>
+<code>ls -l</code> - list many details about files</li>
+<li>
+<code>ls -Fhalt</code> - typical set of options.</li>
+</ul>
+<p><strong>Change Directory</strong></p>
+<blockquote>
+<p>cd [directory]</p>
+</blockquote>
+<p><em>Change to specified directory</em></p>
+<blockquote>
+<p>cd ..</p>
+</blockquote>
+<p><em>Change to the directory above.  The double dots means 'directory above'</em></p>
+<p>The command <code>cd</code> without any argument moves you to your HOME directory.
+If you want to know what directory this is, enter <code>echo $HOME</code> into your command prompt.</p>
+<p>Often, important files are stored directly in your HOME directory.</p>
+<p><strong>Where am I</strong></p>
+<blockquote>
+<p>pwd</p>
+</blockquote>
+<p><em>Print working directory ... the directory we are in now.</em></p>
+<p><strong>Make A New Directory</strong></p>
+<blockquote>
+<p>mkdir [new directory name]</p>
+</blockquote>
+<p><em>Make a new directory in the directory that you are currently in.</em></p>
+<p><strong>Copy</strong></p>
+<blockquote>
+<p>cp [original file] [new file]</p>
+</blockquote>
+<p><em>Copy the original file to a file named what you specify in "new file"</em>
+<em>File specifications can include whole directories too: "/my_folder/file.txt"</em></p>
+<p><strong>Move</strong></p>
+<blockquote>
+<p>mv [original file] [new file]</p>
+</blockquote>
+<p><em>Much like cp, but doesn't copy the file into a new one, just moves it.</em></p>
+<p>Can be used to rename files.</p>
+<p><strong>Remove or Delete</strong></p>
+<blockquote>
+<p>rm [file]
+rm -r [directory]</p>
+</blockquote>
+<p><em>Remove (or delete) a file or directory.</em>
+<em>This is permanent!</em>
+<em>Using the "-r" flag is necessary for directories</em></p>
+<h2>
+<a id="user-content-git-commands" class="anchor" href="#git-commands" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Git commands</h2>
+<h3>
+<a id="user-content-help" class="anchor" href="#help" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Help</h3>
+<p><strong>General Help</strong></p>
+<blockquote>
+<p>git help</p>
+</blockquote>
+<p><strong>Help for specific command</strong></p>
+<blockquote>
+<p>git help [command]</p>
+</blockquote>
+<blockquote>
+<p>git help commit</p>
+</blockquote>
+<p>Like with <code>man</code> above, brings up the help file for the specific git sub-command.</p>
+<p><strong>Look up General Help</strong></p>
+<blockquote>
+<p>git help -a</p>
+</blockquote>
+<p><em>list all subcommands.  Useful for when you can't quite remember which command you want to use.</em></p>
+<blockquote>
+<p>git help -g</p>
+</blockquote>
+<p><em>list general guides including a tutorial and suggested workflows</em></p>
+<blockquote>
+<p>git help glossary</p>
+</blockquote>
+<p><em>Search for a term by pressing "/" then your word, and enter.  Go to each find with "n" or "N" to go backwards.  See Using the Reader (less) for more.</em></p>
+<h3>
+<a id="user-content-using-the-reader-called-less" class="anchor" href="#using-the-reader-called-less" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Using the Reader (called less)</h3>
+<p>The above help commands automatically use a reading app for the terminal called <code>less</code>.
+This is useful because you aren't dumping the whole file into the output of your command line app.
+Instead, you can view the file, and when done, quite <code>less</code>, and make the whole file disappear.
+To navigate and search the file you've just opened, the following commands will be helpful.</p>
+<p><strong>Getting Help</strong></p>
+<table>
+<thead>
+<tr>
+<th>key or command</th>
+<th>action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>h</td>
+<td>read help file</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Moving around</strong></p>
+<table>
+<thead>
+<tr>
+<th>key or command</th>
+<th>action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>j</td>
+<td>1 line down</td>
+</tr>
+<tr>
+<td>k</td>
+<td>1 line up</td>
+</tr>
+<tr>
+<td>d</td>
+<td>1/2 window down</td>
+</tr>
+<tr>
+<td>u</td>
+<td>1/2 window up</td>
+</tr>
+<tr>
+<td>G</td>
+<td>bottom of file</td>
+</tr>
+<tr>
+<td>g</td>
+<td>top of file</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Searching</strong></p>
+<table>
+<thead>
+<tr>
+<th>key or command</th>
+<th>action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/[text]</td>
+<td>search for text in file (hit enter to search)</td>
+</tr>
+<tr>
+<td>n</td>
+<td>scroll to next hit</td>
+</tr>
+<tr>
+<td>N</td>
+<td>scroll to previous hit</td>
+</tr>
+</tbody>
+</table>
+<h3>
+<a id="user-content-setting-up-your-git-program" class="anchor" href="#setting-up-your-git-program" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Setting up your git program</h3>
+<p>The behaviour of git can be configured.
+This configuration can apply to everytime you use git anywhere on your computer.
+Or, it can apply only to when you use git for a particular repository.</p>
+<p>In either case, the settings are stored in a file, and the location of that file determines whether it applies everywhere on your computer or just for a particular repository.</p>
+<p><strong>Global Configuration</strong>, which applies everywhere, is stored in the file <code>$HOME/.gitconfig</code>.</p>
+<p><strong>Local Configuration</strong>, which applies only to a particular repository, is stored in the repository itself, in the hidden sub-folder: <code>repository/.git/config</code>.</p>
+<p>To edit these settings, you can either edit these files directly (which may require you creating the files first), <strong>or, you can use the following commands to have git edit the files for you.</strong></p>
+<p>All the settings dealt with below typically apply to your whole computer and not to a particular repository.  Thus the use of the <code>--global</code> option.  But the syntax is still relevant to repository specific configuration.</p>
+<p><strong>Configure your user name</strong></p>
+<blockquote>
+<p>git config --global user.name [My Name]</p>
+</blockquote>
+<p><em>Lets git know who you are</em>
+<em>If you ever collaborate with others, this way people can know which commits are yours.</em></p>
+<p><strong>Configure your email</strong></p>
+<blockquote>
+<p>git config --global user.email <a href="mailto:my.email@myEmailProvider.com">my.email@myEmailProvider.com</a></p>
+</blockquote>
+<p><em>Tell Git your email address</em>
+<em>Create a config file in your home directory</em></p>
+<p><strong>Change default text editor</strong></p>
+<p><a href="https://help.github.com/articles/associating-text-editors-with-git/">Quick Guide</a></p>
+<blockquote>
+<p>git config --global core.editor "atom --wait"</p>
+</blockquote>
+<p><strong>Add Aliases</strong></p>
+<p>Aliases are sub-commands of your own making which run a custom, and often long, git command that you define.</p>
+<p>Useful for making short versions of common commands, or for saving long complicated commands on speed dial for quick recall.</p>
+<blockquote>
+<p>git config --global alias.quick_commit "commit -a -m "whatever, get it done!"</p>
+</blockquote>
+<p>Now, <code>git quick_commit</code> will run the above command.</p>
+<p><em>Notice the lack of a git in the quotation marks</em></p>
+<p><strong>Listing All Configuration Options</strong></p>
+<blockquote>
+<p>git config --global -l</p>
+</blockquote>
+<p><strong>Editing Config File</strong></p>
+<blockquote>
+<p>git config --global -e</p>
+</blockquote>
+<p><strong>An Alias for listing all aliases</strong></p>
+<blockquote>
+<p>git config --global alias.alias "config --global --get-regexp alias"</p>
+</blockquote>
+<h3>
+<a id="user-content-ignoring-files" class="anchor" href="#ignoring-files" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Ignoring files</h3>
+<p>Often there are files that you don't want git to pay attention to.</p>
+<p>This <a href="https://help.github.com/articles/ignoring-files/">quick guide by GitHub</a> is helpful on this topic.</p>
+<p><strong>Ignore particular files in your repository</strong></p>
+<ul>
+<li>Add to your repository the file <code>.gitignore</code> (the dot is important).</li>
+<li>For each file you wish to ignore, at its name on a new blank line.</li>
+<li>Patterns that use wild cards <code>*</code> can be used to ignore groups of files with similarities in their file names, like <code>*.pyc</code>.</li>
+</ul>
+<p><strong>Ignore files everywhere you use git on your computer</strong></p>
+<ul>
+<li>You can create a file just like the <code>.gitignore</code> file above, and place it in your <code>$HOME</code> directory.</li>
+<li>Once you've done this, use the command below to tell git which file to use for a <em>global ignore file</em>, and then it will be applied all over your computer.</li>
+</ul>
+<blockquote>
+<p>git config --global core.excludesfile [directory and name of your ignore file]</p>
+</blockquote>
+<h3>
+<a id="user-content-starting-a-git-repository" class="anchor" href="#starting-a-git-repository" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Starting a Git Repository</h3>
+<blockquote>
+<p>git init</p>
+</blockquote>
+<p><em>Create that hidden .git directory so Git is ready to start working with your project.</em></p>
+<blockquote>
+<p>git status</p>
+</blockquote>
+<p><em>“Hey Git, what’s up right now?”</em>
+<em>Displays general information about your current repository.</em></p>
+<h3>
+<a id="user-content-adding-files-and-committing-changes-1" class="anchor" href="#adding-files-and-committing-changes-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Adding files and Committing Changes</h3>
+<p><em>Your Captain's Log or Diary</em></p>
+<p><strong>Add a File</strong></p>
+<blockquote>
+<p>git add [file]</p>
+</blockquote>
+<p><em>Tell git to now keep records on a file so you can commit changes you've made to it.</em></p>
+<p>Alternatively, this will stage changes to the file, if you have already been tracking it with git and have previously committed changes to the file with git.</p>
+<p><strong>Commit a Change</strong></p>
+<blockquote>
+<p>git commit -m “Commit message here”</p>
+</blockquote>
+<p><em>Whatever changes you've made (and added to the staging area), commit them with the note or message provided after the "-m" flag.</em></p>
+<p>Note that this only commits changes that have been staged.</p>
+<p><strong>Commit ALL Changes without adding to the Staging Area</strong></p>
+<blockquote>
+<p>git commit -a -m 'Added first verse'</p>
+</blockquote>
+<p><em>The "-a" flag means: git-add, then do commit</em></p>
+<p>This means you don't have to worry about staging.</p>
+<p><em>However, it only works for changes to files that have previously been added.  If you want to commit changes to a new file, you have to add as above, then you can use the above.</em></p>
+<h3>
+<a id="user-content-seeing-your-history-1" class="anchor" href="#seeing-your-history-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Seeing your History</h3>
+<p>Some of the commands below are good candidates for turning into aliases.</p>
+<p><strong>See the log</strong></p>
+<blockquote>
+<p>git log</p>
+</blockquote>
+<p><em>shows captain’s log activity</em></p>
+<blockquote>
+<p>git log --oneline</p>
+</blockquote>
+<p><em>Show the git log in a more concise form.</em></p>
+<p><strong>Seeing Differences between changes or commits</strong></p>
+<blockquote>
+<p>git diff</p>
+</blockquote>
+<p><em>Shows differences between current uncommitted changes and those of the most recent commit</em></p>
+<blockquote>
+<p>git diff [path]</p>
+</blockquote>
+<p><em>Shows differences only for file specified by path</em></p>
+<blockquote>
+<p>git diff [commit] [commit]</p>
+</blockquote>
+<p><em>Shows differences between two specified locations in your history (including branches etc)</em></p>
+<blockquote>
+<p>git diff --word-diff</p>
+</blockquote>
+<p><em>Show differences in terms of changes words, not changed lines</em></p>
+<h3>
+<a id="user-content-advanced-history-searching" class="anchor" href="#advanced-history-searching" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Advanced History Searching</h3>
+<blockquote>
+<p>git log --stat</p>
+</blockquote>
+<blockquote>
+<p>git log --shortstat</p>
+</blockquote>
+<blockquote>
+<p>git log --numstat</p>
+</blockquote>
+<p><em>numbers on what changes have been made</em></p>
+<blockquote>
+<p>git blame [path]</p>
+</blockquote>
+<p><em>Shows only the commits that affect the file defined by path</em></p>
+<blockquote>
+<p>git log -n x</p>
+</blockquote>
+<p><em>limit the number of commits you see from your history to x</em></p>
+<blockquote>
+<p>git log [--after | --before] </p>
+</blockquote>
+<ul>
+<li>Date specifications can look like:
+<ul>
+<li>'YYYY-MM-DD HH:MM::SS +1000'</li>
+<li>'YYYY-MM-DD'</li>
+<li>'7 years 5 months 3 days 2 hours ago'</li>
+</ul>
+</li>
+</ul>
+<p><em>Specify a time period of your history to look at</em></p>
+<blockquote>
+<p>git log --grep [pattern]</p>
+</blockquote>
+<p><em>pattern is in the message for the commit</em></p>
+<blockquote>
+<p>git log -S [pattern]</p>
+</blockquote>
+<p><em>pattern has been added or deleted (in change log) in actual text</em></p>
+<blockquote>
+<p>git log -G [pattern]</p>
+</blockquote>
+<p><em>Pattern occurs in change log in actual text</em></p>
+<blockquote>
+<p>git log -L [start],[end]:file</p>
+</blockquote>
+<p><em>Shows commits that affected the specified line range of the specified file (with respect to present file line numbers)</em></p>
+<blockquote>
+<p>git log --diff-filter [A,D,M, ...]</p>
+</blockquote>
+<p><em>See commits that affected files in a particular way (ie, added a file, modified, deleted, etc)</em></p>
+<h3>
+<a id="user-content-using-your-history" class="anchor" href="#using-your-history" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Using your History</h3>
+<p><em>Time Travel</em></p>
+<h4>
+<a id="user-content-moving-through-time" class="anchor" href="#moving-through-time" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Moving through Time</h4>
+<p><strong>Going back in time to a previous commit</strong></p>
+<blockquote>
+<p>git checkout [unique change id]</p>
+</blockquote>
+<p><em>Goes back to the state of your files at this commit</em>
+<em>Lets you look at your files as they were at this time, and run code if you need to</em></p>
+<p><strong>Going back to the present</strong></p>
+<blockquote>
+<p>git checkout master</p>
+</blockquote>
+<p><em>Here, master is referring to the branch name.  If on another, you need to specify that branch</em></p>
+<h4>
+<a id="user-content-changing-history-1" class="anchor" href="#changing-history-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Changing History</h4>
+<p><strong>Cancelling previous commits</strong></p>
+<blockquote>
+<p>git revert [unique change id]</p>
+</blockquote>
+<p><em>The "Unique Change ID" is what the commands "git log" give you for each commit</em>
+<em>Cancels the changes made in a particular commit, and adds a new commit recording this reversal of changes</em></p>
+<p><strong>Undoing Work before its committed</strong></p>
+<blockquote>
+<p>git checkout HEAD -- [file]</p>
+</blockquote>
+<p><em>Any changes not committed will be discarded</em></p>
+<p><strong>Re-Writing History</strong></p>
+<blockquote>
+<p>git revert SHA</p>
+</blockquote>
+<blockquote>
+<p>git reset SHA</p>
+</blockquote>
+<ul>
+<li>soft (kind of default)</li>
+<li>hard</li>
+<li>all with possibility of specifying path</li>
+</ul>
+<h3>
+<a id="user-content-making-and-using-branches" class="anchor" href="#making-and-using-branches" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Making and Using Branches</h3>
+<p><em>Parallel Universes</em></p>
+<p><strong>List all Current Branches</strong></p>
+<blockquote>
+<p>git branch</p>
+</blockquote>
+<p><strong>Make a new Branch</strong></p>
+<blockquote>
+<p>git branch [branch name]</p>
+</blockquote>
+<p><strong>Go to a branch</strong></p>
+<blockquote>
+<p>git checkout [branch name]</p>
+</blockquote>
+<p><strong>Merge the History of a branch into the current branch</strong></p>
+<blockquote>
+<p>git merge [branch name]</p>
+</blockquote>
+<p><em>Takes the history of "branch name" and merges that into the branch you are current in.</em>
+<em>Running "git branch" before, to confirm which branch you're in maybe helpful.</em>
+<em>If there are different changes in each branch that can't be merged, ie that conflict with each other, you will get a conflict that needs to be resolved.</em></p>
+<h3>
+<a id="user-content-syncing-with-github" class="anchor" href="#syncing-with-github" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Syncing with GitHub</h3>
+<p><em>Sharing your repositories online</em></p>
+<p><strong>List current Remotes</strong></p>
+<blockquote>
+<p>git remote -v</p>
+</blockquote>
+<p><strong>Add your GitHub (or other) repository to your local repository</strong></p>
+<blockquote>
+<p>git remote add [name] [URL]</p>
+</blockquote>
+<p><em>Adds the URL of your online Repo to your local repo under the name you provide.</em>
+<em>Within Git, this is the name of the remote that you are using</em></p>
+<p><strong>Put your Local History onto your Online Repo</strong></p>
+<blockquote>
+<p>git push [remote name] [branch]</p>
+</blockquote>
+<p><em>Takes all of the history of the branch you specify and adds it to the remote you specify</em>
+<em>This history is put into a branch of the same name as your local one, the one you specify.</em></p>
+<p><strong>Bring changes that are on your online repo into your local Repo</strong></p>
+<blockquote>
+<p>git pull [remote name] [branch]</p>
+</blockquote>
+<p><em>Here, "branch" specifies the branch name in the GitHub account (which will generally be the same name as the one on your local computer, as it will have been created by you doing "git push" as above)</em></p>
+<p><em>Will take the history of the "branch" on "remote name" and merge it into the branch you are currently in</em></p>
+<p><strong>Clone a Remote Repo</strong></p>
+<blockquote>
+<p>git clone [URL]</p>
+</blockquote>
+<p>Where [URL] points to an online repository, on GitHub lets say.</p>
+<p>That online repository will be pulled down into a whole new repository on your computer, in a new folder too.</p>
+<ul>
+<li>You will have control over the local repository.</li>
+<li>The remote of this repository will be the one you've clones.</li>
+<li>Usually, you will not have control over the remote, so you will not be able to <code>push</code> but you will be able to <code>pull</code> changes.</li>
+<li>If necessary, you will be able to add an additional remote, one that you control, so that you can push changes to a remote repository.</li>
+</ul>
+<h2>
+<a id="user-content-sample-files" class="anchor" href="#sample-files" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Sample Files</h2>
+<ul>
+<li>These files are simple python scripts.</li>
+<li>All the code has been commented out with <code>#</code> symbols.  This is so that you don't have to type anything, but simply uncomment code.
+<ul>
+<li>Usually, there will be a hot-key for you text editor that does this for you.</li>
+</ul>
+</li>
+</ul>
+<h3>
+<a id="user-content-first-sample-file" class="anchor" href="#first-sample-file" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>First Sample File</h3>
+<div class="highlight highlight-source-python"><pre><span class="pl-c"><span class="pl-c">#</span> def addition(a, b):</span>
+
+<span class="pl-c"><span class="pl-c">#</span> 	summation = a + b</span>
+
+<span class="pl-c"><span class="pl-c">#</span> 	return summation</span>
+
+
+<span class="pl-c"><span class="pl-c">#</span> def subtraction(a, b):</span>
+
+<span class="pl-c"><span class="pl-c">#</span> 	difference = a - b</span>
+
+<span class="pl-c"><span class="pl-c">#</span> 	return difference</span>
+
+
+<span class="pl-c"><span class="pl-c">#</span> def division(a, b):</span>
+
+<span class="pl-c"><span class="pl-c">#</span> 	quotient = a / b</span>
+
+<span class="pl-c"><span class="pl-c">#</span> 	return quotient</span>
+
+<span class="pl-c"><span class="pl-c">#</span> def multiplication(a, b):</span>
+
+<span class="pl-c"><span class="pl-c">#</span> 	product = a * b</span>
+
+<span class="pl-c"><span class="pl-c">#</span> 	return product</span></pre></div>
+<h3>
+<a id="user-content-second" class="anchor" href="#second" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Second</h3>
+<div class="highlight highlight-source-python"><pre><span class="pl-c"><span class="pl-c">#</span> def bad_addition(a, b):</span>
+
+<span class="pl-c"><span class="pl-c">#</span> 	summation = a + b + 0.002</span>
+
+<span class="pl-c"><span class="pl-c">#</span> 	return summation</span>
+
+
+<span class="pl-c"><span class="pl-c">#</span> def bad_subtraction(a, b):</span>
+
+<span class="pl-c"><span class="pl-c">#</span> 	difference = a - b + 7</span>
+
+<span class="pl-c"><span class="pl-c">#</span> 	return difference</span>
+
+
+<span class="pl-c"><span class="pl-c">#</span> def bad_division(a, b):</span>
+
+<span class="pl-c"><span class="pl-c">#</span> 	quotient = (a+13) / b</span>
+
+<span class="pl-c"><span class="pl-c">#</span> 	return quotient</span>
+
+
+<span class="pl-c"><span class="pl-c">#</span> def bad_multiplication(a, b):</span>
+
+<span class="pl-c"><span class="pl-c">#</span> 	product = a * b + 12</span>
+
+<span class="pl-c"><span class="pl-c">#</span> 	return product</span></pre></div>
+<h2>
+<a id="user-content-further-resources" class="anchor" href="#further-resources" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Further Resources</h2>
+<h3>
+<a id="user-content-additional-command-line-resources" class="anchor" href="#additional-command-line-resources" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Additional Command Line Resources</h3>
+<ul>
+<li>
+<p><a href="https://github.com/github/hub">Command Line Tool for using GitHub from the command line</a></p>
+</li>
+<li>
+<p><a href="https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh">Tool for showing your git status in your prompt</a></p>
+</li>
+</ul>
+<h3>
+<a id="user-content-recommended-documentation-and-materials" class="anchor" href="#recommended-documentation-and-materials" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Recommended Documentation and Materials</h3>
+<ul>
+<li>
+<p><a href="https://swcarpentry.github.io/git-novice/" rel="nofollow">Software Carpentry Course Materials on using git</a></p>
+</li>
+<li>
+<p><a href="https://git-scm.com/book/en/v2" rel="nofollow">Official Guide Book</a></p>
+</li>
+</ul>
+<h3>
+<a id="user-content-nice-tutorials" class="anchor" href="#nice-tutorials" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Nice Tutorials</h3>
+<ul>
+<li>
+<p><a href="http://rogerdudler.github.io/git-guide/" rel="nofollow">git - the simple guide</a></p>
+</li>
+<li>
+<p><a href="https://www.learnenough.com/git-tutorial#sec-viewing_the_diff" rel="nofollow">learn enough git to be dangerous</a></p>
+</li>
+</ul>
+<h3>
+<a id="user-content-more-thorough-guides" class="anchor" href="#more-thorough-guides" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>More thorough guides</h3>
+<ul>
+<li>
+<p><a href="http://www.ndpsoftware.com/git-cheatsheet.html" rel="nofollow">interactive cheat sheet</a></p>
+</li>
+<li>
+<p><a href="http://www-cs-students.stanford.edu/%7Eblynn/gitmagic/" rel="nofollow">git magic</a></p>
+</li>
+<li>
+<p><a href="http://marklodato.github.io/visual-git-guide/index-en.html" rel="nofollow">A visual git reference</a></p>
+</li>
+<li>
+<p><a href="http://blog.anvard.org/conversational-git/" rel="nofollow">conversational git</a></p>
+</li>
+</ul>
+<p><strong>Quick Link to This Document:</strong> <a href="http://go.unimelb.edu.au/etc6" rel="nofollow">http://go.unimelb.edu.au/etc6</a></p>
+</article></body></html>
