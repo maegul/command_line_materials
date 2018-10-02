@@ -402,7 +402,7 @@ Command                       | Description
 
 #### Challenge 7 (Remotes)
 
-* Clone this document with the URL `URL`
+* Clone the repo for this document with the URL `https://github.com/maegul/command_line_materials.git`
 * Check to see the files are on your computer
 * Create an empty repo on your github account ...
 	* copy the URL to it 
@@ -1071,3 +1071,4 @@ That online repository will be pulled down into a whole new repository on your c
 
 * [conversational git](http://blog.anvard.org/conversational-git/)
 
+**Quick Link to This Document:** http://go.unimelb.edu.au/etc6
