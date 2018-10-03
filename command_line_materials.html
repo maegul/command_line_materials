@@ -1268,6 +1268,10 @@ pre {
 <td><code>git push -u [name] [branch]</code></td>
 <td>Push and set remote as upstream for branch (automatically used)</td>
 </tr>
+<tr>
+<td><code>git clone [URL]</code></td>
+<td>Pulls the repo at [URL] to your compute, keeps [URL] as remote</td>
+</tr>
 </tbody>
 </table>
 <hr>
@@ -1281,8 +1285,8 @@ pre {
 <li>Command -&gt; action + output</li>
 <li>Structure of a command:</li>
 </ul>
-<p><code>command sub-command -o -option target/argument</code></p>
-<p><code>command sub-command [-o] [-option] [target/argument]</code></p>
+<p><code>command sub-command -o --option target/argument</code></p>
+<p><code>command sub-command [-o] [--option] [target/argument]</code></p>
 <h3>
 <a id="user-content-fundamentals-of-using-the-command-line" class="anchor" href="#fundamentals-of-using-the-command-line" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Fundamentals of Using the Command Line</h3>
 <ul>
@@ -1542,6 +1546,10 @@ pre {
 <ul>
 <li>Clone the repo for this document with the URL <code>https://github.com/maegul/command_line_materials.git</code>
 </li>
+</ul>
+<p><code>git clone [URL]</code>
+<code>git clone https://github.com/maegul/command_line_materials.git</code></p>
+<ul>
 <li>Check to see the files are on your computer</li>
 <li>Create an empty repo on your github account ...
 <ul>
@@ -1814,6 +1822,12 @@ Or, it can apply only to when you use git for a particular repository.</p>
 </blockquote>
 <p>Now, <code>git quick_commit</code> will run the above command.</p>
 <p><em>Notice the lack of a git in the quotation marks</em></p>
+<p>Some aliases you may find useful:</p>
+<ul>
+<li><code>alias.lg "log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=short"</code></li>
+<li><code>alias.lga "log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=short --all --graph"</code></li>
+<li><code>alias.aliases config --global --get-regexp alias</code></li>
+</ul>
 <p><strong>Listing All Configuration Options</strong></p>
 <blockquote>
 <p>git config --global -l</p>
@@ -2154,6 +2168,12 @@ Or, it can apply only to when you use git for a particular repository.</p>
 </li>
 <li>
 <p><a href="https://www.learnenough.com/git-tutorial#sec-viewing_the_diff" rel="nofollow">learn enough git to be dangerous</a></p>
+</li>
+<li>
+<p><a href="https://github.com/jlord/git-it-electron#what-to-install">Interactive Tutorial App</a></p>
+</li>
+<li>
+<p><a href="https://learngitbranching.js.org" rel="nofollow">Interactive Tutorial Web Page</a></p>
 </li>
 </ul>
 <h3>
