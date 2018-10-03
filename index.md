@@ -1081,6 +1081,8 @@ That online repository will be pulled down into a whole new repository on your c
 
 * [Interactive Tutorial App](https://github.com/jlord/git-it-electron#what-to-install)
 
+* [Interactive Tutorial Web Page](https://learngitbranching.js.org)
+
 ### More thorough guides
 
 * [interactive cheat sheet](http://www.ndpsoftware.com/git-cheatsheet.html)
