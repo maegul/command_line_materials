@@ -1079,6 +1079,8 @@ That online repository will be pulled down into a whole new repository on your c
 
 * [learn enough git to be dangerous](https://www.learnenough.com/git-tutorial#sec-viewing_the_diff)
 
+* [Interactive Tutorial App](https://github.com/jlord/git-it-electron#what-to-install)
+
 ### More thorough guides
 
 * [interactive cheat sheet](http://www.ndpsoftware.com/git-cheatsheet.html)
