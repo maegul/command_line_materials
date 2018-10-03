@@ -201,6 +201,7 @@ Command                       | Description
 `git push [name] [branch]`    | Push branch [branch] to remote [name]
 `git pull [name] [branch]`    | Pull branch [branch] from remote [name]
 `git push -u [name] [branch]` | Push and set remote as upstream for branch (automatically used)
+`git clone [URL]`             | Pulls the repo at [URL] to your compute, keeps [URL] as remote
 
 ---
 
@@ -215,9 +216,9 @@ Command                       | Description
 * Command -> action + output
 * Structure of a command: 
 
-`command sub-command -o -option target/argument`
+`command sub-command -o --option target/argument`
 
-`command sub-command [-o] [-option] [target/argument]`
+`command sub-command [-o] [--option] [target/argument]`
 
 
 ### Fundamentals of Using the Command Line
@@ -412,12 +413,15 @@ Command                       | Description
 #### Challenge 7 (Remotes)
 
 * Clone the repo for this document with the URL `https://github.com/maegul/command_line_materials.git`
+
+`git clone [URL]`
+`git clone https://github.com/maegul/command_line_materials.git`
+
 * Check to see the files are on your computer
 * Create an empty repo on your github account ...
 	* copy the URL to it 
 	* Add it as a remote to your new local repository
 	* push this document to your own github repo
-
 
 ---
 
@@ -702,6 +706,11 @@ Useful for making short versions of common commands, or for saving long complica
 Now, `git quick_commit` will run the above command.
 
 *Notice the lack of a git in the quotation marks*
+
+Some aliases you may find useful:
+* `alias.lg "log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=short"`
+* `alias.lga "log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=short --all --graph"`
+* `alias.aliases config --global --get-regexp alias`
 
 **Listing All Configuration Options**
 
