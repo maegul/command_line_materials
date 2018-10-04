@@ -921,9 +921,12 @@ _Cancels the changes made in a particular commit, and adds a new commit recordin
 
 > git reset SHA
 
-* soft (kind of default)
-* hard
-* all with possibility of specifying path
+Will erase your history up until that commit id (SHA).   
+There are three options, all with possibility of specifying path.   
+Default is `--mixed`.  
+`--soft` will erase history only from the repo  
+`--mixed` will erase history from the staging area and the repo, but **not** your working directory.  
+`--hard` will erase history from your working directory, staging area and repo. (nuclear option)  
 
 
 ### Making and Using Branches
