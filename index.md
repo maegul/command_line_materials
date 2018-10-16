@@ -259,8 +259,10 @@ Command                       | Description
 
 ### Getting Help with Git
 * Google + Stack Overflow
-* `git help [command]`
+* `git help [command]` \*
 * `less` and navigation
+
+\* On windows command is `git --help [command]`
 
 ### Starting up Git
 * folder - repo - `git init` - `git status`
@@ -427,6 +429,18 @@ Command                       | Description
 
 ---
 
+
+### Forks and pull requests 
+
+* A fork of a repository/branch is a clone of a repository/branch which is registered under your username
+* A pull request is a proposed change to the master repository/branch
+	- If you make changes to a *clone*, you need permission to create a pull request
+	- Changes to a fork does not require permission because it is registered under your username. You would then create a pull request to the repository/branch you forked from.
+
+
+---
+
+---
 ## Vocabulary
 
 **Less**
