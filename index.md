@@ -259,8 +259,10 @@ Command                       | Description
 
 ### Getting Help with Git
 * Google + Stack Overflow
-* `git help [command]`
+* `git help [command]` \*
 * `less` and navigation
+
+\* On windows command is `git --help [command]`
 
 ### Starting up Git
 * folder - repo - `git init` - `git status`
