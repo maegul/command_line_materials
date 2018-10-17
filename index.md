@@ -1110,4 +1110,6 @@ That online repository will be pulled down into a whole new repository on your c
 
 * [conversational git](http://blog.anvard.org/conversational-git/)
 
+* [interactive vim tutorial](https://www.openvim.com)
+
 **Quick Link to This Document:** http://go.unimelb.edu.au/etc6
